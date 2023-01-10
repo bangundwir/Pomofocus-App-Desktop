@@ -1,0 +1,164 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Pomofocus",
+    "version": "../package.json"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "clipboard": {
+        "all": true,
+        "readText": false,
+        "writeText": false
+      },
+      "dialog": {
+        "all": false,
+        "ask": false,
+        "confirm": false,
+        "message": false,
+        "open": false,
+        "save": false
+      },
+      "fs": {
+        "all": false,
+        "copyFile": false,
+        "createDir": false,
+        "exists": false,
+        "readDir": false,
+        "readFile": false,
+        "removeDir": false,
+        "removeFile": false,
+        "renameFile": false,
+        "scope": [],
+        "writeFile": false
+      },
+      "globalShortcut": {
+        "all": false
+      },
+      "http": {
+        "all": false,
+        "request": false,
+        "scope": []
+      },
+      "notification": {
+        "all": false
+      },
+      "os": {
+        "all": false
+      },
+      "path": {
+        "all": false
+      },
+      "process": {
+        "all": false,
+        "exit": false,
+        "relaunch": true,
+        "relaunchDangerousAllowSymlinkMacos": false
+      },
+      "protocol": {
+        "all": false,
+        "asset": false,
+        "assetScope": []
+      },
+      "shell": {
+        "all": true,
+        "execute": false,
+        "open": false,
+        "scope": [],
+        "sidecar": false
+      },
+      "window": {
+        "all": true,
+        "center": false,
+        "close": false,
+        "create": false,
+        "hide": false,
+        "maximize": true,
+        "minimize": true,
+        "print": false,
+        "requestUserAttention": false,
+        "setAlwaysOnTop": false,
+        "setCursorGrab": false,
+        "setCursorIcon": false,
+        "setCursorPosition": false,
+        "setCursorVisible": false,
+        "setDecorations": false,
+        "setFocus": false,
+        "setFullscreen": true,
+        "setIcon": false,
+        "setMaxSize": false,
+        "setMinSize": false,
+        "setPosition": false,
+        "setResizable": false,
+        "setSize": false,
+        "setSkipTaskbar": false,
+        "setTitle": false,
+        "show": false,
+        "startDragging": false,
+        "unmaximize": true,
+        "unminimize": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "Productivity",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "Pomofocus",
+      "publisher": "Bangundwir",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "Unofficial Pomofocus desktop app made with Tauri",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://bangundwir.my.id/tauri-releases/google-keep-desktop/{{target}}/{{current_version}}",
+        "https://bangundwir.my.id/tauri-releases/google-keep-desktop/{{target}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEM2NDMyMjMzOTUxMTZGMTEKUldRUmJ4R1ZNeUpEeHV3OTJ5Wkp5b2QrdkF3QmFiMmpkWEFjamFKaWYyZ0hjRlU3aFdjR1ZUQnIK"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "visible": false,
+        "title": "Pomofocus"
+      }
+    ]
+  }
+}
