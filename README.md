@@ -1,4 +1,5 @@
 Desktop App
+![image](https://user-images.githubusercontent.com/17474376/211546718-b275830d-f1b2-40db-80dc-e991ece6a32b.png)
 
 \[Unaffiliated] Pomofocus as a desktop app using Tauri
 
